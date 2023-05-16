@@ -16,7 +16,7 @@ if (gender === `male`) {
 
     alert(`Good Morning Sir`);
 
-} else if(gender===`female`) {
+} else if (gender === `female`) {
 
     alert(`Good Morning Ma'am`);
 }
@@ -59,6 +59,14 @@ if (fuel < 0.25) {
 
 
 // Question5
+    
+// a) if condition is true and it displays the message
+// b) if condition is false and it does not display the message
+// c) It displays 2 alerts "Condition 2 is true" and "Condition 4 is true"
+// d) if condition is true and it displays the message "the cost equals"
+// e) if condition is true and it displays true
+// f) if condition is true and it displays the message "car is smaller than cat"
+
 
 
 
@@ -72,34 +80,34 @@ let node = +prompt(`Enter marks obatined in NodeJS:`);
 let totalMarks = +prompt(`Enter total marks:`);
 let obtMarks, percentage, grade, remarks;
 
-obtMarks= js+react+node;
+obtMarks = js + react + node;
 percentage = (obtMarks / totalMarks) * 100;
 
 if (percentage >= 80) {
 
-    grade=`A-one`;
-    remarks=`Excellent`;
+    grade = `A-one`;
+    remarks = `Excellent`;
 
 } else if (percentage >= 70) {
 
-    grade=`A`;
-    remarks=`Good`;
+    grade = `A`;
+    remarks = `Good`;
 
-}else if (percentage >= 60) {
+} else if (percentage >= 60) {
 
-    grade=`B`;
-    remarks=`You need to improve`;
+    grade = `B`;
+    remarks = `You need to improve`;
 
 } else if (percentage < 60) {
 
-    grade=`Fail`;
-    remarks=`Sorry`;
+    grade = `Fail`;
+    remarks = `Sorry`;
 
 }
 
 document.write(`<h1>Marks Sheet</h1><br>`);
 document.write(`Total marks: ${totalMarks} <br>`);
-document.write(`Marks obtained ${obtMarks} <br>`);
+document.write(`Marks obtained: ${obtMarks} <br>`);
 document.write(`Percentage: ${percentage} <br>`);
 document.write(`Grade: ${grade} <br>`);
 document.write(`Remarks: ${remarks} <br>`);
@@ -110,17 +118,17 @@ document.write(`Remarks: ${remarks} <br>`);
 
 // Question7
 
-let secret = 5; num=6, guess=+prompt(`Guess the secret number:`);
+let secret = 5; num = 6, guess = +prompt(`Guess the secret number:`);
 
-if(guess==secret) {
+if (guess == secret) {
 
     alert(`Bingo! Correct answer`);
 
-}else if(guess==num) {
+} else if (guess == num) {
 
     alert(`Close enough to the correct number`);
 
-}else{
+} else {
 
     alert(`Wrong answer`);
 
@@ -131,36 +139,91 @@ if(guess==secret) {
 
 // Question8
 
+let checkNum = +prompt(`Enter a number to check if it is divisible by 3:`);
+
+if (checkNum % 3 === 0) {
+
+    alert(`Given number is divisible by 3`);
+
+} else {
+
+    alert(`Given number is not divisible by 3`);
+
+}
 
 
 
 
 // Question9
 
+let evenOdd = +prompt(`Enter a number to check if it is even or odd:`);
 
+if (evenOdd % 2 === 0) {
+
+    alert(`Given number is even`);
+
+} else {
+
+    alert(`Given number is odd`);
+
+}
 
 
 
 
 // Question10
 
+let t = +prompt(`Enter temperature:`);
 
+if (t > 40) {
+
+    alert(`It is too hot outside.`);
+
+} else if (t > 30) {
+
+    alert(`The Weather today is Normal`);
+
+} else if (t > 20) {
+
+    alert(`Today's Weather is cool`);
+
+} else if (t > 10) {
+
+    alert(`OMG! today's Weather is so cool`);
+
+}
 
 
 
 
 // Question11
 
+let num1 = +prompt(`Enter first number:`), operator = prompt(`Operation (+, -, *, /, %):`), num2 = +prompt(`Enter second number:`), ans;
 
+if (operator === '+') {
 
+    ans = num1 + num2;
 
+} else if (operator === '-') {
 
+    ans = num1 - num2;
 
+} else if (operator === '*') {
 
+    ans = num1 * num2;
 
+} else if (operator === '/') {
 
+    ans = num1 / num2;
 
+} else if (operator === '%') {
 
+    ans = num1 % num2;
 
+} else {
 
+    alert(`Wrong operator entered`);
 
+}
+
+alert(`Answer: ` + ans);
